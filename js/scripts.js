@@ -39,7 +39,6 @@ let Calc = function() {
         this.b = +prompt('Введите число B');
         this.oper = prompt('Введите операцию: + - * /');
 
-        this.operation();
     };
 
     this.operation = function() {
@@ -59,7 +58,6 @@ let Calc = function() {
             default: this.result = 0;
         }
 
-        this.show();
     };
 
     this.show = function() {
@@ -71,3 +69,5 @@ let Calc = function() {
 
 let calc = new Calc();
 calc.get();
+calc.operation();
+calc.show();
